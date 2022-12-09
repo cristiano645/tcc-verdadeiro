@@ -1,0 +1,139 @@
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: auto;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #d7ebdd 0%, #e0fae8 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.container {
+ 
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(34, 116, 18, 0.055);
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+}
+.header {
+  background-color: rgb(212, 214, 212);
+  padding: 20px;
+}
+.form {
+  padding: 20px;
+}
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.form-control input {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+.form-control textarea {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+.form-control i {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden;
+}
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+.form button {
+  background-color: #26a802;
+  border: 2px solid #26a802;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+button:hover {
+  border: 2px solid #2ac400e0;
+  background-color: #2ac400f5;
+}
+button:active {
+ background-color:  #2ac400ce;
+ border: #2ac400ce solid transparent
+}
+
+
+/* Error and Success */
+.form-control.success input {
+  border-color: #0dfc00;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #0dfc00;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+/*flex-box  */
+
+
+@media(max-width:768px) {
+  .col {
+  width: 100%;
+  }
+ }
+ 	<section id="contact" class="add-padding border-top-color2">
+		
+    <div class="container text-center">
+      
+      <div class="row">
+      
+        <div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
+        
+          <h1 class="big-text">Contact Me</h1>
+          
+          <p class="lead">Lorem, ipsum dolor.<br>Lorem ipsum dolor sit amet consectetur.</p>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptas, consequatur explicabo assumenda enim voluptatum ex pariatur ea sit blanditiis.
+
+          <p>Please feel free to contact me with questions, comments or collaborations.</p>
+
+   
+        
+        </div>

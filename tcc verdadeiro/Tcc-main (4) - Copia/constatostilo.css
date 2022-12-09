@@ -1,0 +1,311 @@
+@charset "UTF-8";
+/*==============================================================================================================
+                        -------------------------BARRA DE NAVEGAÇÃO-------------------------------
+===============================================================================================================*/
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none; 
+	box-sizing: border-box;
+}
+
+body {
+	font-family: roboto, sans-serif;
+}
+nav {
+ 
+  	background: #171717;
+	height: 80px;
+	width: 100%;
+}
+label.logo {
+	color: rgb(252, 252, 252);
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+	color: rgb(255, 255, 255);
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active, a:hover {
+	background: #11b602;
+	transition: .5s;
+}
+.checkbtn {
+	font-size: 30px;
+	color: rgb(250, 237, 237);
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn {
+		display: block;
+	}
+	ul{
+	
+		width: 100%;
+		height: 80vh;
+		background: #222522;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: #4efa2b73;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+
+
+
+
+/*========================================================================================================================
+--------------------------------CONTEUDO DA PAGINA------------------------------------------------------------------------------
+==================================================================================================================================*/
+.body {
+    width: 100%;
+    min-height: 100vh;
+    background: #e0fae8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    .container {
+    
+    background-color: #fffafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(34, 116, 18, 0.055);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    }
+    .header {
+    background-color: rgb(238, 242, 238);
+    padding: 20px;
+    }
+    .form {
+    padding: 20px;
+    }
+    .form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    }
+    
+    .form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    }
+    .form-control input  {
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+    }
+    .form-control textarea {
+    border: 2px solid #f0f0f0;
+    display: auto;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+    }
+    .form-control i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+    }
+    .form-control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    }
+    .form button {
+    background-color: #26a802;
+    border: 2px solid #26a802;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    }
+    button:hover {
+    border: 2px solid #2ac400e0;
+    background-color: #2ac400f5;
+    }
+    button:active {
+    background-color:  #2ac400ce;
+    border: #2ac400ce solid transparent
+    }
+    
+    
+    /* Error and Success */
+    .form-control.success input {
+    border-color: #0dfc00;
+    }
+    .form-control.success textarea {
+    border-color: #0dfc00;
+    }
+    
+    .form-control.error input, textarea {
+    border-color: #e74c3c;
+    }
+    .form-control.error textarea {
+        border-color: #e74c3c;
+        }
+        
+    V
+    .form-control.success i.fa-check-circle {
+    color: #0dfc00;
+    visibility: visible;
+    }
+    
+    .form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+    }
+    
+    .form-control.error small {
+    visibility: visible;
+    color: #e74c3c;
+    }
+    
+
+        /*==============================================================================================
+        --------------------------------------------------FOOTERR-------------------------------=
+        ============================================================================================================*/
+        
+          
+          
+        .footer-distributed {
+          background-color: #292c2f;
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+          box-sizing: border-box;
+          width: 100%;
+          text-align: left;
+          font: normal 16px sans-serif;
+          padding: 45px 50px;
+        }
+        
+        .footer-distributed .footer-left p {
+          color: #8f9296;
+          font-size: 14px;
+          margin: 0;
+        }
+        /* Footer links */
+        
+        .footer-distributed p.footer-links {
+          font-size: 18px;
+          font-weight: bold;
+          color: #ffffff;
+          margin: 0 0 10px;
+          padding: 0;
+          transition: ease .25s;
+        }
+        
+        .footer-distributed p.footer-links a {
+          display: inline-block;
+          line-height: 1.8;
+          text-decoration: none;
+          color: inherit;
+          transition: ease .25s;
+        }
+        
+        .footer-distributed .footer-links a:before {
+          content: "·";
+          font-size: 20px;
+          left: 0;
+          color: #fff;
+          display: inline-block;
+          padding-right: 5px;
+        }
+        
+        .footer-distributed .footer-links .link-1:before {
+          content: none;
+        }
+        
+        .footer-distributed .footer-right {
+          float: right;
+          margin-top: 6px;
+          max-width: 180px;
+        }
+        
+        .footer-distributed .footer-right a {
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          background-color: #33383b;
+          border-radius: 2px;
+          font-size: 20px;
+          color: #ffffff;
+          text-align: center;
+          line-height: 35px;
+          margin-left: 3px;
+          transition:all .25s;
+        }
+        
+        .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+        
+        .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+        
+        /* Media Queries */
+        
+        @media (max-width: 600px) {
+          .footer-distributed .footer-left, .footer-distributed .footer-right {
+            text-align: center;
+          }
+          .footer-distributed .footer-right {
+            float: none;
+            margin: 0 auto 20px;
+          }
+          .footer-distributed .footer-left p.footer-links {
+            line-height: 1.8;
+          }
+        }
